@@ -41,6 +41,8 @@ select{
 
 .row{
   display:flex;
+  border-style: none;
+  background-color: inherit;
 }
 .row:after {
   content: "";
@@ -93,6 +95,7 @@ select{
   border-radius: 20px;
   border-color: #0e91ab;
   border-width: 20px;
+  transition: background-color 2s, border-color 2s;
 }
 
 #alias-bio img {
