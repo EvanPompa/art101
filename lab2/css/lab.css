@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+}
+
+img{
+  max-width: 50%;
+}
+/*Columns from: https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+.column {
+  width: 50%;
+}
+
+.row{
+  display:flex;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#content{
+
+}
+
+#evans-div{
+  background-color: lightblue;
+  color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.5em;
+  transition: background-color 2s, color 2s;
+}
+
+#evans-div:hover{
+  background-color: blue;
+  color: white;
+
+}
+
+#alias-bio{
+
+}

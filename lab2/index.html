@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<title>Lab 2 - HTML & CSS Starter</title>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 </head>
 <body>
+
+	<div id="content">
+		<h1>Hello World!</h1>
+	</div>
+
+	<div class="row">
+	<div id="evans-div" class="column">
+		<img src="img/evan-intro-photo.jpg">
+		<p>
+			Hello, my name is Evan Pompa. I am 19 years old and am majoring in AGPM, im in my second year!
+			I was born and raised in southern California, this is my first time on campus. My hobbies include:
+			<ul>
+				<li>Playing video games</li>
+				<li><a href="https://sites.google.com/view/evans-art-gallery/home">Drawing</a></li>
+				<li>Hiking</li>
+				<li>creating video games</li>
+			</ul>
+		</p>
+	</div>
+
+
+	<div id='alias-bio' class="column">
+		<img src="img/alia-intro-photo.jpg" alt="Woman">
+		<p>
+			Hello, my name is Alia Toth-Smith. I'm 20 and I'm in the AGPM program at UCSC. I'm
+			from the Bay Area. My top five hobbies in order from favorite to least favorite are:
+			<ol>
+					<li>Writing</li>
+					<li>Playing Board Games</li>
+					<li>Listen to Music</li>
+					<li>Hiking</li>
+					<li>Drawing</li>
+			<ol>
+		</p>
+	</div>
+
+</div>
+	<div>
+		<form method="POST">
+			<h1>Feedback!</h1><br/>
+			<input name='name' type="text" placeholder="name"/><br/>
+			<input name="password" type="password" placeholder="password"/><br/>
+			Please rate our website!
+			<select>
+				<option value="" disabled selected>Please Select</option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select><br/>
+
+			Click here to acknowledge you've read our: <a href="terms-services.html" target="_blank"> Terms and Services </a><b/r>
+			<label>I have read the Terms and Services<input name='terms-services' type='checkbox' value=1></label><br/>
+			<input name="submit" type="submit" value="Submit Your Feedback!"/><br/>
+		</form>
+	</div>
 
 </body>
 </html>
