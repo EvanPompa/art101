@@ -1,3 +1,36 @@
-#my-portrait {
-    width: 300px;
+body{
+  background-color: beige;
+}
+
+#portrait{
+float: left;
+width: 21.5%;
+background-color: snow;
+margin-left: 13%;
+}
+
+#my-portrait{
+  width: 100%;
+}
+
+#evans-div{
+  float: left;
+  width: 50%;
+  background-color: snow;
+  font-size: 2em;
+}
+
+#intro{
+  margin-left: 20px;
+}
+
+#description{
+  margin-left: 20px;
+}
+
+#labs{
+  float: left;
+  width: 50%;
+  background-color: snow;
+  font-size: 2em;
 }
