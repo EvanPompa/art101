@@ -1,5 +1,5 @@
 body{
-background-color: navy;
+background-color: black;
 }
 
 div{
@@ -8,8 +8,8 @@ div{
   text-align: left;
   border-style: solid;
   border-radius: 3em;
-  background-color: lightyellow;
-  border-color: lavender;
+  background-color: lightgreen;
+  border-color: green;
   border-width: 1em;
   padding: 0.5em;
 }
