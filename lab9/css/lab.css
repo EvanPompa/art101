@@ -1,0 +1,54 @@
+body{
+background-color: purple;
+}
+
+div{
+  width: 92.3%;
+  font-size: 3em;
+  text-align: left;
+  border-style: solid;
+  border-radius: 3em;
+  background-color: lightpink;
+  border-color: hotpink;
+  border-width: 1em;
+  padding: 0.5em;
+}
+
+h3{
+  text-align: center;
+}
+
+img{
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+#header{
+  text-align: center;
+}
+
+.caption{
+  text-align: center;
+  font-size: 0.5em;
+}
+
+#pseudo{
+  text-align: left;
+}
+
+#output{
+  text-align: center;
+  font-size: 0.5em;
+  font-family: cursive;
+  border-radius: 3em;
+  border-width: 0em;
+  padding: 0em;
+  background-color: lavender;
+  width: 100%;
+  color: black;
+}
+
+.button{
+  width: 100%;
+  border-radius: 4em;
+}
