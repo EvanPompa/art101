@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/lab.js" defer></script>
+	<title>Lab 10 JavaScript Events and Forms</title>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+</head>
+<body>
+
+	<div id="header">
+		<h1>Lab 10</h1>
+	</div>
+
+	<div id = "challenge">
+		<h3>Challenge</h3>
+		<p>
+			We had to use an input box and a button to gather an inputted name from the user. We then sorted this name
+			using the .sort method. As a bonus we turned the name into an anagram.
+		</p>
+	</div>
+
+	<div id="problems">
+		<h3>Problems</h3>
+		<p>
+			Trying to turn the selected name into an anagram was difficult. We had a hard time scrambling the words effectively. I opted
+			to delete a selected letter and replace it somewhere else. We also had a hard time finding which letters to make uppercase, but
+			after using a for loop to find each element after a space, the problem was solved.
+		</p>
+	</div>
+
+	<div class="output">
+		<h3> Results </h3>
+		<p>Here are Two screenshots of my working JavaScript file</p>
+		<img src="img/JavaScript1.png">
+		<img src="img/JavaScript2.png"><br>
+		<label for="Input">please enter your name: <input type="text" id="user-name" name="Input your name:" value=""></label>
+		<label for="button"><button type="button" id="my-button" name="button">Submit</button></label>
+		<h4>Script Output</h4>
+		<div id="output"></div>
+
+	</div>
+</body>
+</html>
