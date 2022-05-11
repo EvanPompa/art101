@@ -2,6 +2,17 @@ body{
   background-color: beige;
 }
 
+a{
+  color: skyblue;
+  outline:
+}
+a:visited{
+  color: skyblue;
+}
+a:hover{
+  color: lightpink;
+}
+
 #portrait{
 float: left;
 width: 21.5%;
@@ -17,11 +28,12 @@ margin-left: 13%;
   float: left;
   width: 50%;
   background-color: snow;
-  font-size: 2em;
+  font-size: 1.95em;
 }
 
 #intro{
   margin-left: 20px;
+  text-align: center;
 }
 
 #description{
@@ -30,7 +42,12 @@ margin-left: 13%;
 
 #labs{
   float: left;
-  width: 50%;
+  width: 71.5%;
   background-color: snow;
   font-size: 2em;
+  margin-left: 13%;
+}
+
+div h1{
+  text-align: center;
 }
