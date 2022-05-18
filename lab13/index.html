@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/lab.js" defer></script>
+	<title>Lab 13 Loops</title>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+</head>
+<body>
+
+	<div id="header">
+		<h1>Lab 13 Loops</h1>
+	</div>
+
+	<div id ="challenge">
+		<h2>Challenge</h2>
+		<p>
+			The challenge for this lab was to create a "FizzBuzz" function. The function
+			loops through numbers from one to any inputted max number. The user will also
+			input atleast one factor and nametag into the input field. After hitting the
+			submit button, the function will apply the nametag(s) to any number that is a
+			factor of the inputted factor(s). For example if the nametag was "fish", the factor
+			was "2", and the current number was 4, the nametag "fish" would be applied to the number
+			4 because 4 % 2 = 0. The results of this function are then displayed on the website.
+		</p>
+	</div>
+
+	<div id="problems">
+		<h2>Problems</h2>
+		<p>
+			Formatting the output from the function gave me quite some trouble. I wanted to put
+			my results into columns so the user would have an easier time viewing the information, however,
+			using "float: left" on the assigned Divs within my output Div would break the visual integrity of the website.
+			The results would be side by side, but the website background and output Div background would not apply
+			to the results anymore. This confused me for sometime until I saw that my partner was using a css command
+			called "column-width". This command completely solved my problem without the use of float left.
+		</p>
+	</div>
+
+	<div id="results">
+		<h2> Results </h2>
+		<p>
+			The Results Below allow the user to input factors, nametags, and a max number to see which numbers are
+			factors of their inputted factors.
+		</p>
+		<h3>Script Output</h3>
+		<div id = "input">
+			<div>
+				factors:
+				<input type="number" min="0" id="fac1"></input>
+				<input type="number" min="0" id="fac2"></input>
+				<input type="number" min="0" id="fac3"></input>
+				<input type="number" min="0" id="fac4"></input>
+			</div>
+
+			<br>
+
+			<div>
+				named output:
+				<input type="text"  id="name1"></input>
+				<input type="text"  id="name2"></input>
+				<input type="text"  id="name3"></input>
+				<input type="text"  id="name4"></input>
+			</div>
+
+			<br>
+
+			<div>
+				Max Number:
+				<input type="number"  id="max"></input>
+				<button id="button">Submit</button>
+			</div>
+
+		</div>
+		<div id="output"></div>
+		<div id="jsc"><a href="js/lab.js">JS Source Code</a></div>
+	</div>
+</body>
+</html>
