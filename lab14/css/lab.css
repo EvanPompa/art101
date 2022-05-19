@@ -1,0 +1,62 @@
+html{
+  background-color: lavender;
+}
+
+body{
+  background-color: hotpink;
+  width: 71.5%;
+  margin-left: 13.8%;
+  color: beige;
+}
+body h2{
+  padding-left: 0.2em;
+}
+body h3{
+  padding-left: 0.2em;
+}
+body div p{
+  padding-left: 0.5em;
+}
+
+img{
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+a:visited{
+  color: purple;
+}
+a:hover{
+  color: white;
+}
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+#header{
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+#output{
+  width: 75%;
+  margin-left: 12.5%;
+  background-color: orange;
+  color: black;
+  border-style: solid;
+  /* Wes Modes this column thing saved me so thank you.*/
+  column-width: 200px;
+}
+#output p{
+  margin: 0px;
+  padding: 0px;
+}
+
+#input{
+  padding-left: 12.5%;
+}
+
+#jsc{
+  text-align: right;
+}
