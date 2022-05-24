@@ -18,35 +18,31 @@ function FizzBuzz(fac1, fac2, fac3, fac4, name1, name2, name3, name4, max){
      all of the values in a paragraph tag*/
   var answer = "<p>";
 
+  //create an array of multiples
+  var multiples = [
+    {factor: fac1, nametag: name1},
+    {factor: fac2, nametag: name2},
+    {factor: fac3, nametag: name3},
+    {factor: fac4, nametag: name4}
+  ];
+
   // loop through all of the numbers
-  for(let i = 1; i <= max; i++){
+  for(var num = 1; num <= max; num++){
 
     // add the current number to the string.
-    answer += i;
+    answer += num;
+    answer += ": ";
 
-    // if the current number is a factor of any of the inputted factors
-    if(i % fac1 == 0 || i % fac2 == 0 || i % fac3 == 0 || i % fac4 == 0){
+    // go through each multiple and see if our number is divisible by a factor.
+    for (var i = 0; i < multiples.length; i++) {
+      if(num % multiples[i].factor == 0){
+        answer += multiples[i].nametag;
+      }
+    }
 
-      // format this dash into the string
-      answer += " - ";
-
-      /* find which factor the number is a factor of (could be multiple).
-         Once you find the correct factor, apply a nametag to it.*/
-      if(i % fac1 == 0){
-        answer += name1;
-      }
-      if(i % fac2 == 0){
-        answer += name2;
-      }
-      if(i % fac3 == 0){
-        answer += name3;
-      }
-      if(i % fac4 == 0){
-        answer += name4;
-      }
-
-      //after the correct nametag(s) have been applied, format a "!" into the string
-      answer += "!"
+    // check to see if our number was divisible by any factor so we can apply formatting.
+    if(num % multiples[0].factor == 0 || num % multiples[1].factor == 0 || num % multiples[2].factor == 0 || num % multiples[3].factor == 0){
+      answer += "!";
     }
 
     // Once the loop runs through, format a closing and opening paragraph tag.
@@ -60,13 +56,13 @@ function FizzBuzz(fac1, fac2, fac3, fac4, name1, name2, name3, name4, max){
   return answer;
 }
 
+
 // get the output div element and the submit button element.
 var outputEl = $("#output");
 var button = $("#button");
 
 // add a click event to the button.
 button.click(function(){
-  
   // empty the output div so it doesn't add multiple answers
   $("#output").empty();
 

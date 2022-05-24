@@ -1,12 +1,12 @@
 html{
-  background-color: lavender;
+  background-color: navy;
 }
 
 body{
-  background-color: hotpink;
+  background-color: white;
   width: 71.5%;
   margin-left: 13.8%;
-  color: beige;
+  color: black;
 }
 body h2{
   padding-left: 0.2em;
@@ -24,7 +24,7 @@ img{
 }
 
 a:visited{
-  color: purple;
+  color: orange;
 }
 a:hover{
   color: white;
@@ -42,14 +42,23 @@ a:hover{
 #output{
   width: 75%;
   margin-left: 12.5%;
-  background-color: pink;
+  background-color: coral;
   color: black;
   border-style: solid;
-  /* Wes Modes this column thing saved me so thank you.*/
-  /*column-width: 200px;*/
-  text-align: center;
 }
 #output p{
+  margin: 0px;
+  padding: 0px;
+}
+
+#output2{
+  width: 75%;
+  margin-left: 12.5%;
+  background-color: coral;
+  color: black;
+  border-style: solid;
+}
+#output2 p{
   margin: 0px;
   padding: 0px;
 }
