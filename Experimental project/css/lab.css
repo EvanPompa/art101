@@ -1,0 +1,37 @@
+html{
+  background-color: #08183A;
+  color: beige;
+}
+
+#header{
+  background-color: #152852;
+  font-size: 100px;
+  text-align: center;
+  color: #dedede;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-weight: 700;
+}
+#main{
+  background-color: #152852;
+  width: 100%;
+}
+
+.bodydiv{
+  width: 50%;
+  float: left;
+  font-size: 50px;
+}
+.bodydiv img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.bodydiv p{
+  font-size: 30%;
+}
+hr.solid {
+  border-top: 3px solid #bbb;
+  /* position:relative; right:200px; top:2px; */
+}
