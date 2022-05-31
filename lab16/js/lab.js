@@ -26,6 +26,21 @@ function getNewComic(){
   })
 }
 
+//depending on what button is clicked, increment or decrement the comic number.
+$("#prev").click(function(){
+  if(comicNbr != 1){
+    comicNbr -= 1;
+  }
+  endpoint2 = "https://xkcd.com/" + comicNbr +"/info.0.json";
+  getNewComic();
+});
+
+$("#next").click(function(){
+  comicNbr += 1;
+  endpoint2 = "https://xkcd.com/" + comicNbr +"/info.0.json";
+  getNewComic();
+});
+
 // get the currently selected comic and display it on the page.
 function getAjax(){
 	$.ajax({
@@ -42,22 +57,6 @@ function getAjax(){
   	$("#output").html("Ther be an error matey.");
   })
 }
-
-//depending on what button is clicked, increment or decrement the comic number.
-$("#prev").click(function(){
-  if(comicNbr != 1){
-    comicNbr -= 1;
-  }
-  endpoint2 = "https://xkcd.com/" + comicNbr +"/info.0.json";
-  getNewComic();
-});
-
-$("#next").click(function(){
-  comicNbr += 1;
-  endpoint2 = "https://xkcd.com/" + comicNbr +"/info.0.json";
-  getNewComic();
-});
-
 //call both functions
 getAjax();
 getNewComic();
